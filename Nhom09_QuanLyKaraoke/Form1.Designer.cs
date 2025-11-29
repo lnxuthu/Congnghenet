@@ -37,6 +37,8 @@
             this.ts_QLKhachHang = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_DichVu = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_ThongKe = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_DoanhThu = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_HoaDon = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_HoSo = new System.Windows.Forms.ToolStripMenuItem();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_nhantraphong = new System.Windows.Forms.Button();
@@ -47,9 +49,7 @@
             this.txt_ngaythang = new System.Windows.Forms.TextBox();
             this.btn_kiemtraphong = new System.Windows.Forms.Button();
             this.btn_datphong = new System.Windows.Forms.Button();
-            this.btn_dichvu = new System.Windows.Forms.Button();
-            this.ts_DoanhThu = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_HoaDon = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_goimon = new System.Windows.Forms.Button();
             this.Menu.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_dsphong)).BeginInit();
@@ -67,7 +67,7 @@
             this.ts_HoSo});
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(1088, 30);
+            this.Menu.Size = new System.Drawing.Size(1088, 28);
             this.Menu.TabIndex = 4;
             this.Menu.Text = "menuStrip1";
             // 
@@ -126,6 +126,18 @@
             this.ts_ThongKe.Size = new System.Drawing.Size(84, 24);
             this.ts_ThongKe.Text = "Thống kê";
             // 
+            // ts_DoanhThu
+            // 
+            this.ts_DoanhThu.Name = "ts_DoanhThu";
+            this.ts_DoanhThu.Size = new System.Drawing.Size(161, 26);
+            this.ts_DoanhThu.Text = "Doanh thu";
+            // 
+            // ts_HoaDon
+            // 
+            this.ts_HoaDon.Name = "ts_HoaDon";
+            this.ts_HoaDon.Size = new System.Drawing.Size(161, 26);
+            this.ts_HoaDon.Text = "Hoá đơn";
+            // 
             // ts_HoSo
             // 
             this.ts_HoSo.Name = "ts_HoSo";
@@ -148,7 +160,7 @@
             // 
             this.btn_nhantraphong.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_nhantraphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_nhantraphong.Location = new System.Drawing.Point(357, 56);
+            this.btn_nhantraphong.Location = new System.Drawing.Point(356, 56);
             this.btn_nhantraphong.Name = "btn_nhantraphong";
             this.btn_nhantraphong.Size = new System.Drawing.Size(157, 31);
             this.btn_nhantraphong.TabIndex = 10;
@@ -162,7 +174,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.01587F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 168F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 410F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 411F));
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label2, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.label6, 1, 3);
@@ -171,9 +183,9 @@
             this.tableLayoutPanel1.Controls.Add(this.btn_kiemtraphong, 4, 2);
             this.tableLayoutPanel1.Controls.Add(this.btn_datphong, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.btn_nhantraphong, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btn_dichvu, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btn_goimon, 3, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 30);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 28);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 15F));
@@ -182,7 +194,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 347F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1088, 489);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1088, 491);
             this.tableLayoutPanel1.TabIndex = 11;
             // 
             // label2
@@ -190,7 +202,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 482);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 8);
+            this.label2.Size = new System.Drawing.Size(0, 9);
             this.label2.TabIndex = 8;
             // 
             // label6
@@ -220,7 +232,7 @@
             // 
             this.txt_ngaythang.BackColor = System.Drawing.SystemColors.Control;
             this.txt_ngaythang.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_ngaythang.Location = new System.Drawing.Point(525, 18);
+            this.txt_ngaythang.Location = new System.Drawing.Point(524, 18);
             this.txt_ngaythang.Name = "txt_ngaythang";
             this.txt_ngaythang.Size = new System.Drawing.Size(112, 15);
             this.txt_ngaythang.TabIndex = 18;
@@ -229,7 +241,7 @@
             // 
             this.btn_kiemtraphong.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_kiemtraphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_kiemtraphong.Location = new System.Drawing.Point(680, 56);
+            this.btn_kiemtraphong.Location = new System.Drawing.Point(679, 56);
             this.btn_kiemtraphong.Name = "btn_kiemtraphong";
             this.btn_kiemtraphong.Size = new System.Drawing.Size(194, 31);
             this.btn_kiemtraphong.TabIndex = 21;
@@ -247,28 +259,16 @@
             this.btn_datphong.Text = "Đặt phòng";
             this.btn_datphong.UseVisualStyleBackColor = false;
             // 
-            // btn_dichvu
+            // btn_goimon
             // 
-            this.btn_dichvu.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btn_dichvu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_dichvu.Location = new System.Drawing.Point(525, 56);
-            this.btn_dichvu.Name = "btn_dichvu";
-            this.btn_dichvu.Size = new System.Drawing.Size(143, 31);
-            this.btn_dichvu.TabIndex = 22;
-            this.btn_dichvu.Text = "Gọi dịch vụ";
-            this.btn_dichvu.UseVisualStyleBackColor = false;
-            // 
-            // ts_DoanhThu
-            // 
-            this.ts_DoanhThu.Name = "ts_DoanhThu";
-            this.ts_DoanhThu.Size = new System.Drawing.Size(224, 26);
-            this.ts_DoanhThu.Text = "Doanh thu";
-            // 
-            // ts_HoaDon
-            // 
-            this.ts_HoaDon.Name = "ts_HoaDon";
-            this.ts_HoaDon.Size = new System.Drawing.Size(224, 26);
-            this.ts_HoaDon.Text = "Hoá đơn";
+            this.btn_goimon.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btn_goimon.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_goimon.Location = new System.Drawing.Point(524, 56);
+            this.btn_goimon.Name = "btn_goimon";
+            this.btn_goimon.Size = new System.Drawing.Size(143, 31);
+            this.btn_goimon.TabIndex = 22;
+            this.btn_goimon.Text = "Gọi món";
+            this.btn_goimon.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -310,7 +310,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dgv_dsphong;
-        private System.Windows.Forms.Button btn_dichvu;
+        private System.Windows.Forms.Button btn_goimon;
         private System.Windows.Forms.ToolStripMenuItem ts_DoanhThu;
         private System.Windows.Forms.ToolStripMenuItem ts_HoaDon;
     }

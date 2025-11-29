@@ -25,10 +25,10 @@ namespace Nhom09_QuanLyKaraoke
             this.ts_DatPhong.Click += Ts_DatPhong_Click;
             this.btn_kiemtraphong.Click += Btn_kiemtraphong_Click;
             this.btn_nhantraphong.Click += Btn_nhantraphong_Click;
-            this.btn_dichvu.Click += Btn_dichvu_Click;
+            this.btn_goimon.Click += Btn_goimon_Click;
         }
 
-        private void Btn_dichvu_Click(object sender, EventArgs e)
+        private void Btn_goimon_Click(object sender, EventArgs e)
         {
             Formchild(new GoiDichVu());
         }
