@@ -44,3 +44,30 @@ C:\Users\admin\Documents\codecuamit\.Net\Nhom09_QuanLyKaraoke\Nhom09_QuanLyKarao
 C:\Users\admin\Documents\codecuamit\.Net\Nhom09_QuanLyKaraoke\Nhom09_QuanLyKaraoke\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.DoanhThu.resources
 C:\Users\admin\Documents\codecuamit\.Net\Nhom09_QuanLyKaraoke\Nhom09_QuanLyKaraoke\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.DoiPhong.resources
 C:\Users\admin\Documents\codecuamit\.Net\Nhom09_QuanLyKaraoke\Nhom09_QuanLyKaraoke\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.HoSo.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\bin\Debug\Nhom09_QuanLyKaraoke.exe.config
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\bin\Debug\Nhom09_QuanLyKaraoke.exe
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\bin\Debug\Nhom09_QuanLyKaraoke.pdb
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.csproj.AssemblyReference.cache
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.BangGia.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.DangNhap.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.DatPhong.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.DichVu.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.DoanhThu.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.DoiPhong.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.Form1.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.GoiDichVu.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.HoaDon.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.HoSo.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.KhachHang.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.KiemTraPhong.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.LoaiPhong.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.NhanPhong.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.Nhanvien.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.Phong.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.Properties.Resources.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.QuanLyDatPhong.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.TraPhong.resources
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.csproj.GenerateResource.cache
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.exe
+C:\Users\DELL\OneDrive\Tài liệu\LEARN\.net\DOAN\Congnghenet\Nhom09_QuanLyKaraoke\obj\Debug\Nhom09_QuanLyKaraoke.pdb

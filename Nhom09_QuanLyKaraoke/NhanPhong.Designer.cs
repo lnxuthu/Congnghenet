@@ -130,7 +130,7 @@
             this.txt_phong.Enabled = false;
             this.txt_phong.Location = new System.Drawing.Point(479, 206);
             this.txt_phong.Name = "txt_phong";
-            this.txt_phong.Size = new System.Drawing.Size(102, 22);
+            this.txt_phong.Size = new System.Drawing.Size(186, 22);
             this.txt_phong.TabIndex = 61;
             // 
             // label3
@@ -159,7 +159,7 @@
             this.txt_loaiphong.Enabled = false;
             this.txt_loaiphong.Location = new System.Drawing.Point(479, 165);
             this.txt_loaiphong.Name = "txt_loaiphong";
-            this.txt_loaiphong.Size = new System.Drawing.Size(102, 22);
+            this.txt_loaiphong.Size = new System.Drawing.Size(186, 22);
             this.txt_loaiphong.TabIndex = 68;
             // 
             // NhanPhong
