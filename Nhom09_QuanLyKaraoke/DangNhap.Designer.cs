@@ -64,7 +64,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(357, 85);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(368, 85);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // label1
@@ -86,14 +86,14 @@
             // 
             // txt_matkhau
             // 
-            this.txt_matkhau.Location = new System.Drawing.Point(115, 45);
+            this.txt_matkhau.Location = new System.Drawing.Point(118, 45);
             this.txt_matkhau.Name = "txt_matkhau";
             this.txt_matkhau.Size = new System.Drawing.Size(239, 22);
             this.txt_matkhau.TabIndex = 1;
             // 
             // txt_tendangnhap
             // 
-            this.txt_tendangnhap.Location = new System.Drawing.Point(115, 3);
+            this.txt_tendangnhap.Location = new System.Drawing.Point(118, 3);
             this.txt_tendangnhap.Name = "txt_tendangnhap";
             this.txt_tendangnhap.Size = new System.Drawing.Size(239, 22);
             this.txt_tendangnhap.TabIndex = 2;
@@ -118,7 +118,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label3);
             this.Name = "DangNhap";
-            this.Text = "Đăng nhập";
+            this.Text = "Đăng Nhập";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
