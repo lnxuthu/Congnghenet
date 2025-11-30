@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KiemTraPhong));
             this.label3 = new System.Windows.Forms.Label();
             this.txt_phongtrong = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -105,13 +106,18 @@
             // 
             // btn_thoat
             // 
-            this.btn_thoat.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btn_thoat.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_thoat.FlatAppearance.BorderSize = 0;
+            this.btn_thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_thoat.Location = new System.Drawing.Point(482, 296);
+            this.btn_thoat.Image = ((System.Drawing.Image)(resources.GetObject("btn_thoat.Image")));
+            this.btn_thoat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_thoat.Location = new System.Drawing.Point(929, 19);
             this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Size = new System.Drawing.Size(112, 33);
-            this.btn_thoat.TabIndex = 51;
+            this.btn_thoat.Size = new System.Drawing.Size(99, 33);
+            this.btn_thoat.TabIndex = 52;
             this.btn_thoat.Text = "Thoát";
+            this.btn_thoat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_thoat.UseVisualStyleBackColor = false;
             // 
             // KiemTraPhong
@@ -128,7 +134,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Name = "KiemTraPhong";
-            this.Text = "KiemTraPhong";
+            this.Text = "Kiểm Tra Phòng Trống";
             this.ResumeLayout(false);
             this.PerformLayout();
 

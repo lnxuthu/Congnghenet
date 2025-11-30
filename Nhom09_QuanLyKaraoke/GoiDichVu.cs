@@ -16,6 +16,19 @@ namespace Nhom09_QuanLyKaraoke
         {
             InitializeComponent();
             this.btn_thoat.Click += Btn_thoat_Click;
+            this.dgv_dmon.CellMouseDown += Dgv_dmon_CellMouseDown;
+        }
+
+        private void Dgv_dmon_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                if (e.RowIndex >= 0)
+                {
+                    this.dgv_dmon.ClearSelection();
+                    this.dgv_dmon.Rows[e.RowIndex].Selected = true;
+                }
+            }
         }
 
         private void Btn_thoat_Click(object sender, EventArgs e)

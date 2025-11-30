@@ -22,5 +22,6 @@ namespace Nhom09_QuanLyKaraoke
         {
             this.Close();
         }
+
     }
 }

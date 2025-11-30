@@ -15,6 +15,12 @@ namespace Nhom09_QuanLyKaraoke
         public KhachHang()
         {
             InitializeComponent();
+            this.btn_thoat.Click += Btn_thoat_Click;
+        }
+
+        private void Btn_thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

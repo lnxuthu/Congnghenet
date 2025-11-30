@@ -24,18 +24,79 @@ namespace Nhom09_QuanLyKaraoke
             this.btn_datphong.Click += Btn_datphong_Click;
             this.ts_DatPhong.Click += Ts_DatPhong_Click;
             this.btn_kiemtraphong.Click += Btn_kiemtraphong_Click;
-            this.btn_nhantraphong.Click += Btn_nhantraphong_Click;
-            this.btn_goimon.Click += Btn_goimon_Click;
+            this.btn_nhanphong.Click += Btn_nhanphong_Click;
+            this.ctm_GoiMon.Click += Ctm_GoiMon_Click;
+            this.ctm_TraPhong.Click += Ctm_TraPhong_Click;
+            this.dgv_dsphong.CellMouseDown += Dgv_dsphong_CellMouseDown;
+            this.tsm_AnUong.Click += Tsm_AnUong_Click;
+            this.ts_QLKhachHang.Click += Ts_QLKhachHang_Click;
+            this.tsm_BangGia.Click += Tsm_BangGia_Click;
+            this.ts_HoaDon.Click += Ts_HoaDon_Click;
+            this.ctm_DoiPhong.Click += Ctm_DoiPhong_Click;
+            this.ts_DoanhThu.Click += Ts_DoanhThu_Click;
+            this.ts_HoSo.Click += Ts_HoSo_Click;
         }
 
-        private void Btn_goimon_Click(object sender, EventArgs e)
+        private void Ts_HoSo_Click(object sender, EventArgs e)
+        {
+            Formchild(new HoSo());
+        }
+
+        private void Ts_DoanhThu_Click(object sender, EventArgs e)
+        {
+            Formchild(new DoanhThu());
+        }
+
+        private void Ctm_DoiPhong_Click(object sender, EventArgs e)
+        {
+            Formchild(new DoiPhong());
+        }
+
+        private void Ts_HoaDon_Click(object sender, EventArgs e)
+        {
+            Formchild(new HoaDon());
+        }
+
+        private void Tsm_BangGia_Click(object sender, EventArgs e)
+        {
+            Formchild(new BangGia());
+        }
+
+        private void Ts_QLKhachHang_Click(object sender, EventArgs e)
+        {
+            Formchild(new KhachHang());
+        }
+
+        private void Tsm_AnUong_Click(object sender, EventArgs e)
+        {
+            Formchild(new DichVu());
+        }
+
+        private void Dgv_dsphong_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                if (e.RowIndex >= 0)
+                {
+                    this.dgv_dsphong.ClearSelection();
+                    this.dgv_dsphong.Rows[e.RowIndex].Selected = true;
+                }
+            }
+        }
+
+        private void Ctm_TraPhong_Click(object sender, EventArgs e)
+        {
+            Formchild(new TraPhong());
+        }
+
+        private void Btn_nhanphong_Click(object sender, EventArgs e)
+        {
+            Formchild(new NhanPhong());
+        }
+
+        private void Ctm_GoiMon_Click(object sender, EventArgs e)
         {
             Formchild(new GoiDichVu());
-        }
-
-        private void Btn_nhantraphong_Click(object sender, EventArgs e)
-        {
-            Formchild(new NhanTraPhong());
         }
 
         private void Btn_kiemtraphong_Click(object sender, EventArgs e)
@@ -96,5 +157,6 @@ namespace Nhom09_QuanLyKaraoke
             tableLayoutPanel1.Visible = true; // hiện lại hoạt động trong ngày
         }
 
+    
     }
 }

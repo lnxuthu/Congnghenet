@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoaiPhong));
             this.grb_dsloaiphong = new System.Windows.Forms.GroupBox();
-            this.dgv_dsnhanvien = new System.Windows.Forms.DataGridView();
-            this.btn_luu = new System.Windows.Forms.Button();
-            this.btn_thoat = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.dgv_dsloaiphong = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grb_ttloaiphong = new System.Windows.Forms.GroupBox();
+            this.txt_succhua = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.txt_maloaiphong = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_giacaodiem = new System.Windows.Forms.TextBox();
@@ -45,89 +45,58 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btn_thoat = new System.Windows.Forms.Button();
+            this.btn_luu = new System.Windows.Forms.Button();
+            this.btn_sua = new System.Windows.Forms.Button();
+            this.btn_xoa = new System.Windows.Forms.Button();
+            this.btn_them = new System.Windows.Forms.Button();
             this.grb_dsloaiphong.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_dsnhanvien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_dsloaiphong)).BeginInit();
             this.grb_ttloaiphong.SuspendLayout();
             this.SuspendLayout();
             // 
             // grb_dsloaiphong
             // 
-            this.grb_dsloaiphong.Controls.Add(this.dgv_dsnhanvien);
-            this.grb_dsloaiphong.Location = new System.Drawing.Point(221, 237);
+            this.grb_dsloaiphong.Controls.Add(this.dgv_dsloaiphong);
+            this.grb_dsloaiphong.Location = new System.Drawing.Point(362, 269);
             this.grb_dsloaiphong.Name = "grb_dsloaiphong";
-            this.grb_dsloaiphong.Size = new System.Drawing.Size(641, 224);
+            this.grb_dsloaiphong.Size = new System.Drawing.Size(270, 175);
             this.grb_dsloaiphong.TabIndex = 50;
             this.grb_dsloaiphong.TabStop = false;
             this.grb_dsloaiphong.Text = "Danh sách các loại phòng hát";
             // 
-            // dgv_dsnhanvien
+            // dgv_dsloaiphong
             // 
-            this.dgv_dsnhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_dsnhanvien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_dsnhanvien.Location = new System.Drawing.Point(3, 18);
-            this.dgv_dsnhanvien.Name = "dgv_dsnhanvien";
-            this.dgv_dsnhanvien.RowHeadersWidth = 51;
-            this.dgv_dsnhanvien.RowTemplate.Height = 24;
-            this.dgv_dsnhanvien.Size = new System.Drawing.Size(635, 203);
-            this.dgv_dsnhanvien.TabIndex = 10;
+            this.dgv_dsloaiphong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_dsloaiphong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_dsloaiphong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2});
+            this.dgv_dsloaiphong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_dsloaiphong.Location = new System.Drawing.Point(3, 18);
+            this.dgv_dsloaiphong.Name = "dgv_dsloaiphong";
+            this.dgv_dsloaiphong.RowHeadersWidth = 51;
+            this.dgv_dsloaiphong.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_dsloaiphong.RowTemplate.Height = 24;
+            this.dgv_dsloaiphong.Size = new System.Drawing.Size(264, 154);
+            this.dgv_dsloaiphong.TabIndex = 10;
             // 
-            // btn_luu
+            // Column1
             // 
-            this.btn_luu.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_luu.Location = new System.Drawing.Point(672, 187);
-            this.btn_luu.Name = "btn_luu";
-            this.btn_luu.Size = new System.Drawing.Size(92, 33);
-            this.btn_luu.TabIndex = 49;
-            this.btn_luu.Text = "Lưu";
-            this.btn_luu.UseVisualStyleBackColor = false;
+            this.Column1.HeaderText = "TÊN LOẠI";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
             // 
-            // btn_thoat
+            // Column2
             // 
-            this.btn_thoat.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_thoat.Location = new System.Drawing.Point(721, 75);
-            this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Size = new System.Drawing.Size(92, 33);
-            this.btn_thoat.TabIndex = 48;
-            this.btn_thoat.Text = "Thoát";
-            this.btn_thoat.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(770, 187);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(92, 33);
-            this.button4.TabIndex = 47;
-            this.button4.Text = "Sửa";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(770, 130);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(92, 33);
-            this.button3.TabIndex = 46;
-            this.button3.Text = "Xoá";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(672, 130);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 33);
-            this.button2.TabIndex = 45;
-            this.button2.Text = "Thêm";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Column2.HeaderText = "SỨC CHỨA";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
             // 
             // grb_ttloaiphong
             // 
+            this.grb_ttloaiphong.Controls.Add(this.txt_succhua);
+            this.grb_ttloaiphong.Controls.Add(this.label6);
             this.grb_ttloaiphong.Controls.Add(this.txt_maloaiphong);
             this.grb_ttloaiphong.Controls.Add(this.label5);
             this.grb_ttloaiphong.Controls.Add(this.txt_giacaodiem);
@@ -136,12 +105,28 @@
             this.grb_ttloaiphong.Controls.Add(this.label4);
             this.grb_ttloaiphong.Controls.Add(this.label2);
             this.grb_ttloaiphong.Controls.Add(this.label1);
-            this.grb_ttloaiphong.Location = new System.Drawing.Point(221, 53);
+            this.grb_ttloaiphong.Location = new System.Drawing.Point(362, 57);
             this.grb_ttloaiphong.Name = "grb_ttloaiphong";
-            this.grb_ttloaiphong.Size = new System.Drawing.Size(419, 167);
+            this.grb_ttloaiphong.Size = new System.Drawing.Size(419, 194);
             this.grb_ttloaiphong.TabIndex = 44;
             this.grb_ttloaiphong.TabStop = false;
             this.grb_ttloaiphong.Text = "Thông tin loại phòng";
+            // 
+            // txt_succhua
+            // 
+            this.txt_succhua.Location = new System.Drawing.Point(173, 91);
+            this.txt_succhua.Name = "txt_succhua";
+            this.txt_succhua.Size = new System.Drawing.Size(211, 22);
+            this.txt_succhua.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(32, 94);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 16);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Sức chứa";
             // 
             // txt_maloaiphong
             // 
@@ -161,14 +146,14 @@
             // 
             // txt_giacaodiem
             // 
-            this.txt_giacaodiem.Location = new System.Drawing.Point(173, 130);
+            this.txt_giacaodiem.Location = new System.Drawing.Point(173, 162);
             this.txt_giacaodiem.Name = "txt_giacaodiem";
             this.txt_giacaodiem.Size = new System.Drawing.Size(211, 22);
             this.txt_giacaodiem.TabIndex = 6;
             // 
             // txt_giabinhthuong
             // 
-            this.txt_giabinhthuong.Location = new System.Drawing.Point(173, 92);
+            this.txt_giabinhthuong.Location = new System.Drawing.Point(173, 124);
             this.txt_giabinhthuong.Name = "txt_giabinhthuong";
             this.txt_giabinhthuong.Size = new System.Drawing.Size(211, 22);
             this.txt_giabinhthuong.TabIndex = 5;
@@ -183,7 +168,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 130);
+            this.label4.Location = new System.Drawing.Point(32, 162);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 16);
             this.label4.TabIndex = 2;
@@ -192,7 +177,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 98);
+            this.label2.Location = new System.Drawing.Point(32, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(121, 16);
             this.label2.TabIndex = 1;
@@ -218,23 +203,83 @@
             this.label3.TabIndex = 43;
             this.label3.Text = "LOẠI PHÒNG HÁT";
             // 
+            // btn_thoat
+            // 
+            this.btn_thoat.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_thoat.FlatAppearance.BorderSize = 0;
+            this.btn_thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_thoat.Image = ((System.Drawing.Image)(resources.GetObject("btn_thoat.Image")));
+            this.btn_thoat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_thoat.Location = new System.Drawing.Point(929, 19);
+            this.btn_thoat.Name = "btn_thoat";
+            this.btn_thoat.Size = new System.Drawing.Size(99, 33);
+            this.btn_thoat.TabIndex = 72;
+            this.btn_thoat.Text = "Thoát";
+            this.btn_thoat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_thoat.UseVisualStyleBackColor = false;
+            // 
+            // btn_luu
+            // 
+            this.btn_luu.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_luu.Location = new System.Drawing.Point(675, 401);
+            this.btn_luu.Name = "btn_luu";
+            this.btn_luu.Size = new System.Drawing.Size(92, 33);
+            this.btn_luu.TabIndex = 76;
+            this.btn_luu.Text = "Lưu";
+            this.btn_luu.UseVisualStyleBackColor = false;
+            // 
+            // btn_sua
+            // 
+            this.btn_sua.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btn_sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sua.Location = new System.Drawing.Point(675, 362);
+            this.btn_sua.Name = "btn_sua";
+            this.btn_sua.Size = new System.Drawing.Size(92, 33);
+            this.btn_sua.TabIndex = 75;
+            this.btn_sua.Text = "Sửa";
+            this.btn_sua.UseVisualStyleBackColor = false;
+            // 
+            // btn_xoa
+            // 
+            this.btn_xoa.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btn_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_xoa.Location = new System.Drawing.Point(675, 323);
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Size = new System.Drawing.Size(92, 33);
+            this.btn_xoa.TabIndex = 74;
+            this.btn_xoa.Text = "Xoá";
+            this.btn_xoa.UseVisualStyleBackColor = false;
+            // 
+            // btn_them
+            // 
+            this.btn_them.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btn_them.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_them.Location = new System.Drawing.Point(675, 284);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(92, 33);
+            this.btn_them.TabIndex = 73;
+            this.btn_them.Text = "Thêm";
+            this.btn_them.UseVisualStyleBackColor = false;
+            // 
             // LoaiPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1082, 473);
-            this.Controls.Add(this.grb_dsloaiphong);
             this.Controls.Add(this.btn_luu);
+            this.Controls.Add(this.btn_sua);
+            this.Controls.Add(this.btn_xoa);
+            this.Controls.Add(this.btn_them);
             this.Controls.Add(this.btn_thoat);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.grb_dsloaiphong);
             this.Controls.Add(this.grb_ttloaiphong);
             this.Controls.Add(this.label3);
             this.Name = "LoaiPhong";
-            this.Text = "LoaiPhong";
+            this.Text = "Loại Phòng Hát";
             this.grb_dsloaiphong.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_dsnhanvien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_dsloaiphong)).EndInit();
             this.grb_ttloaiphong.ResumeLayout(false);
             this.grb_ttloaiphong.PerformLayout();
             this.ResumeLayout(false);
@@ -245,12 +290,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox grb_dsloaiphong;
-        private System.Windows.Forms.DataGridView dgv_dsnhanvien;
-        private System.Windows.Forms.Button btn_luu;
-        private System.Windows.Forms.Button btn_thoat;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dgv_dsloaiphong;
         private System.Windows.Forms.GroupBox grb_ttloaiphong;
         private System.Windows.Forms.TextBox txt_maloaiphong;
         private System.Windows.Forms.Label label5;
@@ -261,5 +301,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btn_thoat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.Button btn_luu;
+        private System.Windows.Forms.Button btn_sua;
+        private System.Windows.Forms.Button btn_xoa;
+        private System.Windows.Forms.Button btn_them;
+        private System.Windows.Forms.TextBox txt_succhua;
+        private System.Windows.Forms.Label label6;
     }
 }
