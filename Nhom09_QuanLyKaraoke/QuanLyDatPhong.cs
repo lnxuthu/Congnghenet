@@ -18,9 +18,11 @@ namespace Nhom09_QuanLyKaraoke
             this.btn_thoat.Click += Btn_thoat_Click;
         }
 
+        
         private void Btn_thoat_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+       
     }
 }
