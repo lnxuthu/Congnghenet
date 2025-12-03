@@ -23,6 +23,38 @@ namespace Nhom09_QuanLyKaraoke
             this.Load += QuanLyDatPhong_Load;
             this.btn_huy.Click += Btn_huy_Click;
             this.btn_sua.Click += Btn_sua_Click;
+            this.btn_tim.Click += Btn_tim_Click;
+        }
+
+        private void Btn_tim_Click(object sender, EventArgs e)
+        {
+            if (cbo_makh.SelectedValue != null)
+            {
+                string maKHDaChon = cbo_makh.SelectedValue.ToString();
+
+                DataTable dttimphieu = qlpdp.TimPhieuTheoMaKH(maKHDaChon);
+
+                dgv_dsphieudatphong.DataSource = dttimphieu;
+                DataBingdingPDP(dttimphieu);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn Mã khách hàng để tìm kiếm phiếu đặt.");
+            }
+        }
+
+        private void Cbo_makh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbo_makh.SelectedValue != null)
+            {
+                string maKHDaChon = cbo_makh.SelectedValue.ToString();
+                DataTable dttimphieu = qlpdp.TimPhieuTheoMaKH(maKHDaChon);
+
+                dgv_dsphieudatphong.DataSource = dttimphieu;
+
+                DataBingdingPDP(dttimphieu);
+            }
+            
         }
 
         private void Btn_sua_Click(object sender, EventArgs e)

@@ -29,7 +29,6 @@ namespace Nhom09_QuanLyKaraoke
                 DataTable dtPhongTrong = tp.TimPhongTrongTheoLoai(maLoaiDaChon);
 
                 txt_phongtrong.Text = dtPhongTrong.Rows.Count.ToString();
-
                 lv_phongtrong.Items.Clear();
 
                 lv_phongtrong.View = View.List;
