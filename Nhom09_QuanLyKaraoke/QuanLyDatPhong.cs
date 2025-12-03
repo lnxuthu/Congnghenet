@@ -21,7 +21,95 @@ namespace Nhom09_QuanLyKaraoke
             this.btn_them.Click += Btn_them_Click;
             this.btn_luu.Click += Btn_luu_Click;
             this.Load += QuanLyDatPhong_Load;
+            this.btn_huy.Click += Btn_huy_Click;
+            this.btn_sua.Click += Btn_sua_Click;
         }
+
+        private void Btn_sua_Click(object sender, EventArgs e)
+        {
+            string maphieu = txt_maphieu.Text;
+            DateTime ngaydatmoi;
+            TimeSpan giovaomoi;
+            TimeSpan gioramoi;
+            if (!DateTime.TryParse(txt_ngaydat.Text, out ngaydatmoi))
+            {
+                MessageBox.Show("Ngày đặt không hợp lệ.");
+                return;
+            }
+            
+            if (!TimeSpan.TryParse(txt_giobatdau.Text, out giovaomoi))
+            {
+                MessageBox.Show("Giờ bắt đầu (Giờ vào) không hợp lệ.");
+                return;
+            }
+            if (!TimeSpan.TryParse(txt_gioketthuc.Text, out gioramoi))
+            {
+                MessageBox.Show("Giờ kết thúc (Giờ ra) không hợp lệ.");
+                return;
+            }
+
+            string makhmoi = cbo_makh.SelectedValue?.ToString();
+            string loaiphongmoi = cmb_loaiphong.SelectedValue?.ToString();
+            string phongmoi = txt_phong.Text;
+            string manvmoi = txt_manv.Text;
+            float tongtienmoi = float.Parse(txt_tongtien.Text);
+
+
+            // ==========================================================
+            // TÍNH TOÁN LẠI TỔNG TIỀN
+            // ==========================================================
+
+            float giaPhongMotGio = qlpdp.TimGiaPhong(loaiphongmoi);
+
+            if (giaPhongMotGio <= 0)
+            {
+                MessageBox.Show("Không tìm thấy giá cho loại phòng này hoặc loại phòng không hợp lệ.");
+                return;
+            }
+            TimeSpan thoiGianSuDung = gioramoi.Subtract(giovaomoi);
+
+            if (thoiGianSuDung.TotalHours <= 0)
+            {
+                MessageBox.Show("Giờ ra phải lớn hơn Giờ vào.");
+                return;
+            }
+            tongtienmoi = (float)thoiGianSuDung.TotalHours * giaPhongMotGio;
+            txt_tongtien.Text = tongtienmoi.ToString();
+
+            if (qlpdp.SuaPhieuDatPhong(maphieu, ngaydatmoi, giovaomoi, gioramoi, makhmoi, loaiphongmoi, phongmoi, manvmoi, tongtienmoi))
+            {
+                if (qlpdp.Luu())
+                {
+                    MessageBox.Show("Sửa phiếu đặt phòng thành công");
+                    dgv_dsphieudatphong.DataSource = qlpdp.Load_PhieuDatPhong();
+                }
+                else
+                {
+                    MessageBox.Show("Sửa thất bại trong cơ sở dữ liệu");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Sửa phiếu đặt phòng thất bại");
+            }
+
+        }
+
+        private void Btn_huy_Click(object sender, EventArgs e)
+        {
+            if (dgv_dsphieudatphong.SelectedRows.Count > 0)
+            {
+                string mapdp = dgv_dsphieudatphong.SelectedRows[0].Cells["MAPHIEU"].Value.ToString();
+                qlpdp.HuyPhieuDatPhong(mapdp);
+                dgv_dsphieudatphong.Rows.Remove(dgv_dsphieudatphong.SelectedRows[0]);
+                MessageBox.Show("Hủy phiếu đặt thành công");
+            }
+            else
+            {
+                MessageBox.Show("Hủy phiếu đặt thất bại");
+            }
+        }
+
         private void Btn_luu_Click(object sender, EventArgs e)
         {
             cls_PHIEUDATPHONG dtpdp = new cls_PHIEUDATPHONG();
@@ -36,16 +124,17 @@ namespace Nhom09_QuanLyKaraoke
                 MessageBox.Show("Ngày đặt không hợp lệ");
                 return;
             }
-            DateTime giovao, giora;
-            if (DateTime.TryParse(txt_giobatdau.Text, out giovao) &&
-                DateTime.TryParse(txt_gioketthuc.Text, out giora))
+
+            TimeSpan giovaomoi;
+            TimeSpan gioramoi;
+            if (!TimeSpan.TryParse(txt_giobatdau.Text, out giovaomoi))
             {
-                dtpdp.Giovao = giovao.TimeOfDay;
-                dtpdp.Giora = giora.TimeOfDay;
+                MessageBox.Show("Giờ bắt đầu (Giờ vào) không hợp lệ.");
+                return;
             }
-            else
+            if (!TimeSpan.TryParse(txt_gioketthuc.Text, out gioramoi))
             {
-                MessageBox.Show("Giờ vào hoặc giờ ra không hợp lệ");
+                MessageBox.Show("Giờ kết thúc (Giờ ra) không hợp lệ.");
                 return;
             }
             dtpdp.Makhachhang = cbo_makh.SelectedValue?.ToString();

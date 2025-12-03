@@ -41,9 +41,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txt_phong = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.txt_ngayketthuc = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.txt_tongtien = new System.Windows.Forms.TextBox();
             this.txt_giobatdau = new System.Windows.Forms.TextBox();
             this.txt_ngaydat = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,8 +53,6 @@
             this.btn_datphong = new System.Windows.Forms.Button();
             this.btn_thoat = new System.Windows.Forms.Button();
             this.btn_nhanphong = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txt_tongtien = new System.Windows.Forms.TextBox();
             this.grb_ttcanhan.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -187,6 +187,15 @@
             this.txt_phong.Size = new System.Drawing.Size(80, 22);
             this.txt_phong.TabIndex = 16;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(25, 121);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(63, 16);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "Tổng tiền";
+            // 
             // txt_ngayketthuc
             // 
             this.txt_ngayketthuc.Location = new System.Drawing.Point(369, 75);
@@ -211,6 +220,17 @@
             this.label8.Size = new System.Drawing.Size(23, 16);
             this.label8.TabIndex = 11;
             this.label8.Text = "Từ";
+            // 
+            // txt_tongtien
+            // 
+            this.txt_tongtien.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_tongtien.Enabled = false;
+            this.txt_tongtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tongtien.ForeColor = System.Drawing.Color.DarkRed;
+            this.txt_tongtien.Location = new System.Drawing.Point(122, 118);
+            this.txt_tongtien.Name = "txt_tongtien";
+            this.txt_tongtien.Size = new System.Drawing.Size(327, 22);
+            this.txt_tongtien.TabIndex = 10;
             // 
             // txt_giobatdau
             // 
@@ -248,7 +268,7 @@
             // 
             this.btn_datphong.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_datphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_datphong.Location = new System.Drawing.Point(390, 291);
+            this.btn_datphong.Location = new System.Drawing.Point(358, 291);
             this.btn_datphong.Name = "btn_datphong";
             this.btn_datphong.Size = new System.Drawing.Size(112, 33);
             this.btn_datphong.TabIndex = 46;
@@ -275,32 +295,12 @@
             // 
             this.btn_nhanphong.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_nhanphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_nhanphong.Location = new System.Drawing.Point(587, 291);
+            this.btn_nhanphong.Location = new System.Drawing.Point(555, 291);
             this.btn_nhanphong.Name = "btn_nhanphong";
             this.btn_nhanphong.Size = new System.Drawing.Size(112, 33);
             this.btn_nhanphong.TabIndex = 47;
             this.btn_nhanphong.Text = "Nhận phòng";
             this.btn_nhanphong.UseVisualStyleBackColor = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(25, 121);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(63, 16);
-            this.label11.TabIndex = 15;
-            this.label11.Text = "Tổng tiền";
-            // 
-            // txt_tongtien
-            // 
-            this.txt_tongtien.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_tongtien.Enabled = false;
-            this.txt_tongtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tongtien.ForeColor = System.Drawing.Color.DarkRed;
-            this.txt_tongtien.Location = new System.Drawing.Point(122, 118);
-            this.txt_tongtien.Name = "txt_tongtien";
-            this.txt_tongtien.Size = new System.Drawing.Size(327, 22);
-            this.txt_tongtien.TabIndex = 10;
             // 
             // DatPhong
             // 
