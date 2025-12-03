@@ -84,7 +84,7 @@
             this.txt_hientai.Enabled = false;
             this.txt_hientai.Location = new System.Drawing.Point(479, 187);
             this.txt_hientai.Name = "txt_hientai";
-            this.txt_hientai.Size = new System.Drawing.Size(102, 22);
+            this.txt_hientai.Size = new System.Drawing.Size(187, 22);
             this.txt_hientai.TabIndex = 87;
             // 
             // label1
@@ -148,7 +148,7 @@
             this.cmb_phong.FormattingEnabled = true;
             this.cmb_phong.Location = new System.Drawing.Point(479, 234);
             this.cmb_phong.Name = "cmb_phong";
-            this.cmb_phong.Size = new System.Drawing.Size(102, 24);
+            this.cmb_phong.Size = new System.Drawing.Size(187, 24);
             this.cmb_phong.TabIndex = 89;
             // 
             // DoiPhong

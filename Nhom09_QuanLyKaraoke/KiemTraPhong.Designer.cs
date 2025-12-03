@@ -34,7 +34,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.cmb_loaiphong = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lv_phongtrong = new System.Windows.Forms.ListView();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_thoat = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -86,14 +86,14 @@
             this.label1.TabIndex = 40;
             this.label1.Text = "Loại phòng";
             // 
-            // listView1
+            // lv_phongtrong
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(526, 191);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(105, 78);
-            this.listView1.TabIndex = 49;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lv_phongtrong.HideSelection = false;
+            this.lv_phongtrong.Location = new System.Drawing.Point(526, 191);
+            this.lv_phongtrong.Name = "lv_phongtrong";
+            this.lv_phongtrong.Size = new System.Drawing.Size(105, 78);
+            this.lv_phongtrong.TabIndex = 49;
+            this.lv_phongtrong.UseCompatibleStateImageBehavior = false;
             // 
             // label2
             // 
@@ -127,7 +127,7 @@
             this.ClientSize = new System.Drawing.Size(1082, 473);
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lv_phongtrong);
             this.Controls.Add(this.txt_phongtrong);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.cmb_loaiphong);
@@ -147,7 +147,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox cmb_loaiphong;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lv_phongtrong;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_thoat;
     }

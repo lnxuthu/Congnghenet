@@ -32,6 +32,7 @@
             this.btn_thoat = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btn_in = new System.Windows.Forms.Button();
             this.btn_thanhtoan = new System.Windows.Forms.Button();
             this.txt_tongtt = new System.Windows.Forms.TextBox();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -58,7 +59,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_khachtra = new System.Windows.Forms.TextBox();
-            this.btn_in = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -117,6 +117,17 @@
             this.groupBox3.TabIndex = 59;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Hoá đơn";
+            // 
+            // btn_in
+            // 
+            this.btn_in.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btn_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_in.Location = new System.Drawing.Point(620, 73);
+            this.btn_in.Name = "btn_in";
+            this.btn_in.Size = new System.Drawing.Size(125, 33);
+            this.btn_in.TabIndex = 79;
+            this.btn_in.Text = "In hoá đơn";
+            this.btn_in.UseVisualStyleBackColor = false;
             // 
             // btn_thanhtoan
             // 
@@ -296,7 +307,6 @@
             // txt_phong
             // 
             this.txt_phong.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_phong.Enabled = false;
             this.txt_phong.Location = new System.Drawing.Point(457, 146);
             this.txt_phong.Name = "txt_phong";
             this.txt_phong.Size = new System.Drawing.Size(78, 22);
@@ -305,7 +315,6 @@
             // txt_sdt
             // 
             this.txt_sdt.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_sdt.Enabled = false;
             this.txt_sdt.Location = new System.Drawing.Point(457, 104);
             this.txt_sdt.Name = "txt_sdt";
             this.txt_sdt.Size = new System.Drawing.Size(223, 22);
@@ -352,22 +361,10 @@
             // txt_khachtra
             // 
             this.txt_khachtra.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_khachtra.Enabled = false;
             this.txt_khachtra.Location = new System.Drawing.Point(457, 65);
             this.txt_khachtra.Name = "txt_khachtra";
             this.txt_khachtra.Size = new System.Drawing.Size(223, 22);
             this.txt_khachtra.TabIndex = 64;
-            // 
-            // btn_in
-            // 
-            this.btn_in.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btn_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_in.Location = new System.Drawing.Point(620, 73);
-            this.btn_in.Name = "btn_in";
-            this.btn_in.Size = new System.Drawing.Size(125, 33);
-            this.btn_in.TabIndex = 79;
-            this.btn_in.Text = "In hoá đơn";
-            this.btn_in.UseVisualStyleBackColor = false;
             // 
             // TraPhong
             // 

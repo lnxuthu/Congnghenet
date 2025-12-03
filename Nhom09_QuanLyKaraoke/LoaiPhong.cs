@@ -61,7 +61,6 @@ namespace Nhom09_QuanLyKaraoke
                 {
                     MessageBox.Show("Sửa thất bại trong cơ sở dữ liệu");
                 }
-                    
             }
             else
             {
@@ -136,6 +135,7 @@ namespace Nhom09_QuanLyKaraoke
             txt_tenloai.Enabled = false;
             txt_succhua.Enabled = false;
             txt_giaphong.Enabled = false;
+
             //load datagridview loaiphong
             dgv_dsloaiphong.DataSource = ql.Load_LoaiPhong();
             dgv_dsloaiphong.ClearSelection();

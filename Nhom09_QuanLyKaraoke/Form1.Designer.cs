@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Menu = new System.Windows.Forms.MenuStrip();
             this.ts_QLNhanSu = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_QLPhong = new System.Windows.Forms.ToolStripMenuItem();
@@ -215,7 +218,7 @@
             this.btn_datphong.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tableLayoutPanel1.SetColumnSpan(this.btn_datphong, 2);
             this.btn_datphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_datphong.Location = new System.Drawing.Point(298, 53);
+            this.btn_datphong.Location = new System.Drawing.Point(297, 53);
             this.btn_datphong.Name = "btn_datphong";
             this.btn_datphong.Size = new System.Drawing.Size(125, 31);
             this.btn_datphong.TabIndex = 20;
@@ -226,7 +229,7 @@
             // 
             this.btn_nhanphong.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_nhanphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_nhanphong.Location = new System.Drawing.Point(450, 53);
+            this.btn_nhanphong.Location = new System.Drawing.Point(449, 53);
             this.btn_nhanphong.Name = "btn_nhanphong";
             this.btn_nhanphong.Size = new System.Drawing.Size(125, 31);
             this.btn_nhanphong.TabIndex = 10;
@@ -237,7 +240,7 @@
             // 
             this.btn_kiemtraphong.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_kiemtraphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_kiemtraphong.Location = new System.Drawing.Point(602, 53);
+            this.btn_kiemtraphong.Location = new System.Drawing.Point(601, 53);
             this.btn_kiemtraphong.Name = "btn_kiemtraphong";
             this.btn_kiemtraphong.Size = new System.Drawing.Size(177, 31);
             this.btn_kiemtraphong.TabIndex = 21;
@@ -248,7 +251,7 @@
             // 
             this.txt_ngaythang.BackColor = System.Drawing.SystemColors.Control;
             this.txt_ngaythang.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_ngaythang.Location = new System.Drawing.Point(450, 18);
+            this.txt_ngaythang.Location = new System.Drawing.Point(449, 18);
             this.txt_ngaythang.Name = "txt_ngaythang";
             this.txt_ngaythang.Size = new System.Drawing.Size(112, 15);
             this.txt_ngaythang.TabIndex = 18;
@@ -273,7 +276,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 143F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 152F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 488F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 489F));
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label2, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.dgv_dsphong, 3, 3);
@@ -308,6 +311,14 @@
             // dgv_dsphong
             // 
             this.dgv_dsphong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_dsphong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_dsphong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_dsphong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -318,9 +329,25 @@
             this.Column6});
             this.tableLayoutPanel1.SetColumnSpan(this.dgv_dsphong, 6);
             this.dgv_dsphong.ContextMenuStrip = this.contextMenuStrip1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_dsphong.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_dsphong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_dsphong.Location = new System.Drawing.Point(3, 137);
             this.dgv_dsphong.Name = "dgv_dsphong";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_dsphong.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_dsphong.RowHeadersWidth = 51;
             this.dgv_dsphong.RowTemplate.Height = 24;
             this.dgv_dsphong.Size = new System.Drawing.Size(1082, 342);
@@ -384,7 +411,7 @@
             this.btn_tim.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tableLayoutPanel1.SetColumnSpan(this.btn_tim, 2);
             this.btn_tim.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_tim.Location = new System.Drawing.Point(307, 106);
+            this.btn_tim.Location = new System.Drawing.Point(306, 106);
             this.btn_tim.Name = "btn_tim";
             this.btn_tim.Size = new System.Drawing.Size(85, 25);
             this.btn_tim.TabIndex = 23;

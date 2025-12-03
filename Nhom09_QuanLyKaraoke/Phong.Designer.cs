@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Phong));
             this.grb_dsloaiphong = new System.Windows.Forms.GroupBox();
             this.dgv_dsphong = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_luu = new System.Windows.Forms.Button();
             this.btn_sua = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
@@ -41,7 +39,7 @@
             this.grb_ttloaiphong = new System.Windows.Forms.GroupBox();
             this.txt_sophong = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.rdb_dangsua = new System.Windows.Forms.RadioButton();
             this.rdb_hoatdong = new System.Windows.Forms.RadioButton();
             this.rdb_trong = new System.Windows.Forms.RadioButton();
             this.cbx_loaiphong = new System.Windows.Forms.ComboBox();
@@ -52,9 +50,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btn_thoat = new System.Windows.Forms.Button();
             this.btn_tim = new System.Windows.Forms.Button();
+            this.bsPhong = new System.Windows.Forms.BindingSource(this.components);
+            this.MAPHONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TENLOAI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grb_dsloaiphong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_dsphong)).BeginInit();
             this.grb_ttloaiphong.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsPhong)).BeginInit();
             this.SuspendLayout();
             // 
             // grb_dsloaiphong
@@ -72,8 +76,9 @@
             this.dgv_dsphong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_dsphong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_dsphong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MAPHONG,
             this.Column1,
-            this.Column2,
+            this.TENLOAI,
             this.Column3});
             this.dgv_dsphong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_dsphong.Location = new System.Drawing.Point(3, 18);
@@ -82,24 +87,6 @@
             this.dgv_dsphong.RowTemplate.Height = 24;
             this.dgv_dsphong.Size = new System.Drawing.Size(620, 185);
             this.dgv_dsphong.TabIndex = 10;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "SỐ PHÒNG";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "LOẠI PHÒNG";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "TRẠNG THÁI";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
             // 
             // btn_luu
             // 
@@ -149,7 +136,7 @@
             // 
             this.grb_ttloaiphong.Controls.Add(this.txt_sophong);
             this.grb_ttloaiphong.Controls.Add(this.label4);
-            this.grb_ttloaiphong.Controls.Add(this.radioButton3);
+            this.grb_ttloaiphong.Controls.Add(this.rdb_dangsua);
             this.grb_ttloaiphong.Controls.Add(this.rdb_hoatdong);
             this.grb_ttloaiphong.Controls.Add(this.rdb_trong);
             this.grb_ttloaiphong.Controls.Add(this.cbx_loaiphong);
@@ -180,16 +167,16 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Số Phòng";
             // 
-            // radioButton3
+            // rdb_dangsua
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(383, 119);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(117, 20);
-            this.radioButton3.TabIndex = 12;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Đang sửa chữa";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rdb_dangsua.AutoSize = true;
+            this.rdb_dangsua.Location = new System.Drawing.Point(383, 119);
+            this.rdb_dangsua.Name = "rdb_dangsua";
+            this.rdb_dangsua.Size = new System.Drawing.Size(117, 20);
+            this.rdb_dangsua.TabIndex = 12;
+            this.rdb_dangsua.TabStop = true;
+            this.rdb_dangsua.Text = "Đang sửa chữa";
+            this.rdb_dangsua.UseVisualStyleBackColor = true;
             // 
             // rdb_hoatdong
             // 
@@ -293,6 +280,34 @@
             this.btn_tim.Text = "Tìm";
             this.btn_tim.UseVisualStyleBackColor = false;
             // 
+            // MAPHONG
+            // 
+            this.MAPHONG.DataPropertyName = "MAPHONG";
+            this.MAPHONG.HeaderText = "MÃ PHÒNG";
+            this.MAPHONG.MinimumWidth = 6;
+            this.MAPHONG.Name = "MAPHONG";
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "SOPHONG";
+            this.Column1.HeaderText = "SỐ PHÒNG";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // TENLOAI
+            // 
+            this.TENLOAI.DataPropertyName = "TENLOAI";
+            this.TENLOAI.HeaderText = "LOẠI PHÒNG";
+            this.TENLOAI.MinimumWidth = 6;
+            this.TENLOAI.Name = "TENLOAI";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "TINHTRANG";
+            this.Column3.HeaderText = "TRẠNG THÁI";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
             // Phong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -313,6 +328,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_dsphong)).EndInit();
             this.grb_ttloaiphong.ResumeLayout(false);
             this.grb_ttloaiphong.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsPhong)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,13 +351,15 @@
         private System.Windows.Forms.RadioButton rdb_hoatdong;
         private System.Windows.Forms.RadioButton rdb_trong;
         private System.Windows.Forms.ComboBox cbx_loaiphong;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton rdb_dangsua;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.TextBox txt_sophong;
         private System.Windows.Forms.Button btn_thoat;
         private System.Windows.Forms.Button btn_tim;
+        private System.Windows.Forms.BindingSource bsPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MAPHONG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TENLOAI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }

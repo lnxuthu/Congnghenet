@@ -51,7 +51,7 @@
             this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_thoat.Image = ((System.Drawing.Image)(resources.GetObject("btn_thoat.Image")));
             this.btn_thoat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_thoat.Location = new System.Drawing.Point(929, 19);
+            this.btn_thoat.Location = new System.Drawing.Point(833, 32);
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.Size = new System.Drawing.Size(99, 33);
             this.btn_thoat.TabIndex = 46;
@@ -63,7 +63,7 @@
             // 
             this.btn_tim.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_tim.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_tim.Location = new System.Drawing.Point(383, 261);
+            this.btn_tim.Location = new System.Drawing.Point(351, 332);
             this.btn_tim.Name = "btn_tim";
             this.btn_tim.Size = new System.Drawing.Size(125, 33);
             this.btn_tim.TabIndex = 65;
@@ -73,7 +73,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(379, 89);
+            this.label1.Location = new System.Drawing.Point(347, 160);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 16);
             this.label1.TabIndex = 58;
@@ -83,7 +83,7 @@
             // 
             this.txt_khnhan.BackColor = System.Drawing.SystemColors.Control;
             this.txt_khnhan.Enabled = false;
-            this.txt_khnhan.Location = new System.Drawing.Point(479, 124);
+            this.txt_khnhan.Location = new System.Drawing.Point(447, 195);
             this.txt_khnhan.Name = "txt_khnhan";
             this.txt_khnhan.Size = new System.Drawing.Size(187, 22);
             this.txt_khnhan.TabIndex = 63;
@@ -92,7 +92,7 @@
             // 
             this.btn_nhanphong.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_nhanphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_nhanphong.Location = new System.Drawing.Point(541, 261);
+            this.btn_nhanphong.Location = new System.Drawing.Point(509, 332);
             this.btn_nhanphong.Name = "btn_nhanphong";
             this.btn_nhanphong.Size = new System.Drawing.Size(125, 33);
             this.btn_nhanphong.TabIndex = 64;
@@ -101,7 +101,7 @@
             // 
             // txt_sdt
             // 
-            this.txt_sdt.Location = new System.Drawing.Point(479, 86);
+            this.txt_sdt.Location = new System.Drawing.Point(447, 157);
             this.txt_sdt.Name = "txt_sdt";
             this.txt_sdt.Size = new System.Drawing.Size(186, 22);
             this.txt_sdt.TabIndex = 59;
@@ -109,7 +109,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(379, 127);
+            this.label12.Location = new System.Drawing.Point(347, 198);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(77, 16);
             this.label12.TabIndex = 62;
@@ -118,7 +118,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(379, 209);
+            this.label9.Location = new System.Drawing.Point(347, 280);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(46, 16);
             this.label9.TabIndex = 60;
@@ -128,7 +128,7 @@
             // 
             this.txt_phong.BackColor = System.Drawing.SystemColors.Control;
             this.txt_phong.Enabled = false;
-            this.txt_phong.Location = new System.Drawing.Point(479, 206);
+            this.txt_phong.Location = new System.Drawing.Point(447, 277);
             this.txt_phong.Name = "txt_phong";
             this.txt_phong.Size = new System.Drawing.Size(186, 22);
             this.txt_phong.TabIndex = 61;
@@ -138,7 +138,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Firebrick;
-            this.label3.Location = new System.Drawing.Point(439, 26);
+            this.label3.Location = new System.Drawing.Point(407, 97);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(172, 26);
             this.label3.TabIndex = 66;
@@ -147,7 +147,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(379, 168);
+            this.label2.Location = new System.Drawing.Point(347, 239);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 16);
             this.label2.TabIndex = 67;
@@ -157,7 +157,7 @@
             // 
             this.txt_loaiphong.BackColor = System.Drawing.SystemColors.Control;
             this.txt_loaiphong.Enabled = false;
-            this.txt_loaiphong.Location = new System.Drawing.Point(479, 165);
+            this.txt_loaiphong.Location = new System.Drawing.Point(447, 236);
             this.txt_loaiphong.Name = "txt_loaiphong";
             this.txt_loaiphong.Size = new System.Drawing.Size(186, 22);
             this.txt_loaiphong.TabIndex = 68;
@@ -166,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1082, 473);
+            this.ClientSize = new System.Drawing.Size(979, 473);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_loaiphong);
             this.Controls.Add(this.label3);

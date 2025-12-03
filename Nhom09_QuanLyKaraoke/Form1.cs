@@ -30,7 +30,6 @@ namespace Nhom09_QuanLyKaraoke
             this.dgv_dsphong.CellMouseDown += Dgv_dsphong_CellMouseDown;
             this.tsm_AnUong.Click += Tsm_AnUong_Click;
             this.ts_QLKhachHang.Click += Ts_QLKhachHang_Click;
-            this.tsm_BangGia.Click += Tsm_BangGia_Click;
             this.ts_HoaDon.Click += Ts_HoaDon_Click;
             this.ctm_DoiPhong.Click += Ctm_DoiPhong_Click;
             this.ts_DoanhThu.Click += Ts_DoanhThu_Click;
@@ -57,10 +56,7 @@ namespace Nhom09_QuanLyKaraoke
             Formchild(new HoaDon());
         }
 
-        private void Tsm_BangGia_Click(object sender, EventArgs e)
-        {
-            Formchild(new BangGia());
-        }
+        
 
         private void Ts_QLKhachHang_Click(object sender, EventArgs e)
         {
