@@ -146,12 +146,9 @@ namespace Nhom09_QuanLyKaraoke
         {
             cls_PHIEUDATPHONG dtpdp = new cls_PHIEUDATPHONG();
             dtpdp.Maphieu = txt_maphieu.Text;
+
             DateTime ngaydat;
-            if (DateTime.TryParse(txt_ngaydat.Text, out ngaydat))
-            {
-                dtpdp.Ngaydat = ngaydat;
-            }
-            else
+            if (!DateTime.TryParse(txt_ngaydat.Text, out ngaydat))
             {
                 MessageBox.Show("Ngày đặt không hợp lệ");
                 return;
@@ -169,12 +166,32 @@ namespace Nhom09_QuanLyKaraoke
                 MessageBox.Show("Giờ kết thúc (Giờ ra) không hợp lệ.");
                 return;
             }
+
+            dtpdp.Ngaydat = ngaydat;
+            dtpdp.Giovao = giovaomoi;
+            dtpdp.Giora = gioramoi;
             dtpdp.Makhachhang = cbo_makh.SelectedValue?.ToString();
-            dtpdp.Maloai = cmb_loaiphong.SelectedValue?.ToString();
+            string maLoaiPhong = cmb_loaiphong.SelectedValue?.ToString();
+            dtpdp.Maloai = maLoaiPhong;
             dtpdp.Maphong = txt_phong.Text;
             dtpdp.Manhanvien = txt_manv.Text;
-            dtpdp.Tongtien = float.Parse(txt_tongtien.Text);
 
+            float tongtienmoi = TinhTongTienUocTinh(ngaydat, giovaomoi, gioramoi, maLoaiPhong);
+
+            if (tongtienmoi == -1f)
+            {
+                return;
+            }
+
+            if (ngaydat.Date == DateTime.Today)
+            {
+
+                tongtienmoi = 0f;
+                MessageBox.Show("Phiếu đặt phòng trong ngày hôm nay sẽ có Tổng tiền ban đầu là 0.");
+            }
+
+            dtpdp.Tongtien = tongtienmoi;
+            txt_tongtien.Text = tongtienmoi.ToString("N0");
             if (qlpdp.ThemPhieuDatPhong(dtpdp))
             {
                 if (qlpdp.Luu())
@@ -190,6 +207,8 @@ namespace Nhom09_QuanLyKaraoke
             {
                 MessageBox.Show("Lưu thất bại");
             }
+
+            // Reset form và Load lại dữ liệu
             txt_maphieu.Clear();
             txt_ngaydat.Clear();
             txt_giobatdau.Clear();
@@ -203,6 +222,35 @@ namespace Nhom09_QuanLyKaraoke
             DataTable kqpdp = qlpdp.Load_PhieuDatPhong();
             DataBingdingPDP(kqpdp);
         }
+        private float TinhTongTienUocTinh(DateTime ngayDat, TimeSpan gioVao, TimeSpan gioRa, string maLoaiPhong)
+        {
+            DateTime thoiDiemVao = ngayDat.Date.Add(gioVao);
+            DateTime thoiDiemRa = ngayDat.Date.Add(gioRa);
+
+            if (thoiDiemRa <= thoiDiemVao)
+            {
+                thoiDiemRa = thoiDiemRa.AddDays(1);
+            }
+
+            TimeSpan thoiGianSuDung = thoiDiemRa.Subtract(thoiDiemVao);
+
+            if (thoiGianSuDung.TotalHours <= 0)
+            {
+                MessageBox.Show("Giờ ra phải lớn hơn Giờ vào.", "Lỗi Thời Gian", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return -1f;
+            }
+
+            float giaPhongMotGio = qlpdp.TimGiaPhong(maLoaiPhong);
+
+            if (giaPhongMotGio <= 0)
+            {
+                MessageBox.Show("Không tìm thấy giá cho loại phòng này hoặc loại phòng không hợp lệ.", "Lỗi Giá", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return -1f;
+            }
+
+            float tongTien = (float)thoiGianSuDung.TotalHours * giaPhongMotGio;
+            return tongTien;
+        }
 
         private void Btn_them_Click(object sender, EventArgs e)
         {
@@ -215,6 +263,16 @@ namespace Nhom09_QuanLyKaraoke
             txt_phong.Enabled = true;
             txt_manv.Enabled = true;
             txt_tongtien.Enabled = true;
+
+            txt_maphieu.Clear();
+            txt_ngaydat.Clear();
+            txt_giobatdau.Clear();
+            txt_gioketthuc.Clear();
+            cbo_makh.Text = string.Empty;
+            cmb_loaiphong.Text = string.Empty;
+            txt_phong.Clear();
+            txt_manv.Clear();
+            txt_tongtien.Clear();
         }
         public void DataBingdingPDP(DataTable pdata)
         {

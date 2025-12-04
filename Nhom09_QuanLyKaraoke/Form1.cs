@@ -12,7 +12,7 @@ namespace Nhom09_QuanLyKaraoke
 {
     public partial class Form1 : Form
     {
-        
+        QLPHONGDANGSD qlpdsd = new QLPHONGDANGSD();   
         public Form1()
         {
             InitializeComponent();
@@ -34,6 +34,20 @@ namespace Nhom09_QuanLyKaraoke
             this.ctm_DoiPhong.Click += Ctm_DoiPhong_Click;
             this.ts_DoanhThu.Click += Ts_DoanhThu_Click;
             this.ts_HoSo.Click += Ts_HoSo_Click;
+            this.btn_tim.Click += Btn_tim_Click;
+        }
+        private void Btn_tim_Click(object sender, EventArgs e)
+        {
+            string SoPhongCanTim = txt_phong.Text.Trim();
+
+            if (string.IsNullOrEmpty(SoPhongCanTim))
+            {
+                dgv_dsphong.DataSource = qlpdsd.Load_PhongDangSD();
+            }
+            else
+            {
+                dgv_dsphong.DataSource = qlpdsd.TimPhongTheoSoPhong(SoPhongCanTim);
+            }
         }
 
         private void Ts_HoSo_Click(object sender, EventArgs e)
@@ -56,7 +70,6 @@ namespace Nhom09_QuanLyKaraoke
             Formchild(new HoaDon());
         }
 
-        
 
         private void Ts_QLKhachHang_Click(object sender, EventArgs e)
         {
@@ -129,6 +142,8 @@ namespace Nhom09_QuanLyKaraoke
         {
             //lấy ngày hiện tại cho trang chính
             txt_ngaythang.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            dgv_dsphong.DataSource = qlpdsd.Load_PhongDangSD();
+
         }
 
         //mở các form con quản lý
